@@ -17,6 +17,7 @@
 				<include name="**/lib*.jar" />
 			</fileset>
 		</path>
+		
 		<echo message="About to run fitnesse tests on server" level="info" />
 		<parallel>
 			<daemons>
