@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="fitnesseTestResult" default="tests" >
+<project name="DVR" default="tests" >
 	<echo message="About to run fitnesse tests on server  111" level="info" />
 	<target name="smoke" description="Run fitnesse acceptance tests.">
 		<echo message="About to run fitnesse tests on server  111aaa" level="info" />
