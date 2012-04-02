@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <project name="fitnesseTestResult" default="tests" >
+	<echo message="About to run fitnesse tests on server" level="info 111" />
 	<target name="smoke" description="Run fitnesse acceptance tests.">
 		<property name="fitnesse_root_dir" location="C:\fitnesse"/>
 		<property name="fitnesse_log_dir"  location="C:\Users\asif.iqbal\.hudson\jobs\DVR\workspace\build\fitnesseLogs" />
@@ -8,6 +9,7 @@
 		<property name="fitnesse.output.file" value="${fitnesse.output.dir}/fitnesse-test-results" />
 		<property name="Fitnesse.Test.Page.Path" value="FitNesse.SuiteAcceptanceTests.SuiteTestRunnerTests" />
 		<property name="fitnesse.port" value="82" />
+		<echo message="About to run fitnesse tests on server" level="info 22222" />
 		<path id="fitpath">
 			<fileset dir="${fitnesse_root_dir}" >
 				<include name="fitnesse.jar" />
