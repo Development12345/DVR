@@ -2,6 +2,7 @@
 <project name="fitnesseTestResult" default="tests" >
 	<echo message="About to run fitnesse tests on server  111" level="info" />
 	<target name="smoke" description="Run fitnesse acceptance tests.">
+		<echo message="About to run fitnesse tests on server  111aaa" level="info" />
 		<property name="fitnesse_root_dir" location="C:\fitnesse"/>
 		<property name="fitnesse_log_dir"  location="C:\Users\asif.iqbal\.hudson\jobs\DVR\workspace\build\fitnesseLogs" />
 		<property name="fitnesse_output_dir"  location="C:\Users\asif.iqbal\.hudson\jobs\DVR\workspace\build" />
