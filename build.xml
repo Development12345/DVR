@@ -17,7 +17,7 @@
 		<echo message="About to run fitnesse tests on server" level="info" />
 		<parallel>
 			<daemons>
-				<java classpathref="fitpath" classname="fitnesse.Fitnesse" fork="true" dir="${fitnesse_root_dir}" resultproperty="fit.testfailures"/>
+				<java classpathref="fitpath" classname="fitnesse.Fitnesse" fork="true" dir="${fitnesse_root_dir}" resultproperty="fit.testfailures">
 					<arg value="-p" />
 					<arg value="${fitnesse.port}" />
 					<arg value="-e" />
