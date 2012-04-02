@@ -17,7 +17,7 @@
 			<daemons>
 				<java classpathref="fitpath" classname="fitnesse.Fitnesse" fork="true" dir="${fitnesse_root_dir}" resultproperty="fit.testfailures"/>
 					<arg value="-p" />
-					<arg value="${fitnesse.port" />
+					<arg value="${fitnesse.port"} />
 					<arg value="-e" />
 					<arg value="0" />
 					<arg value="-d" />
