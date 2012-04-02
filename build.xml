@@ -18,7 +18,7 @@
 			<daemons>
 				<java classpathref="fitpath" classname="fitnesse.Fitnesse" fork="true" dir="${fitnesse_root_dir}" resultproperty="fit.testfailures"/>
 					<arg value="-p" />
-					<arg value="${fitnesse.port"} />
+					<arg value="${fitnesse.port}" />
 					<arg value="-e" />
 					<arg value="0" />
 					<arg value="-d" />
@@ -32,7 +32,7 @@
 					<arg value="-v" />
 					<arg value="localhost" />
 					<arg value="${fitnesse.port}" />
-					<arg value="${Fitnesse.Test.Page.Path"} />
+					<arg value="${Fitnesse.Test.Page.Path}" />
 				</java>
 			</sequential>
 		</parallel>
