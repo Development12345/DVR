@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<property name="fitnesseTestResult" default="tests" >
+<project name="fitnesseTestResult" default="tests" >
 	<target name="smoke" description="Run fitnesse acceptance tests.">
 		<property name="fitnesse_root_dir" location="C:\fitnesse"/>
 		<property name="fitnesse_log_dir"  location="C:\Users\asif.iqbal\.hudson\jobs\DVR\workspace\build\fitnesseLogs" />
