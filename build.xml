@@ -5,6 +5,7 @@
 		<property name="fitnesse_output_dir"  location="C:\Users\asif.iqbal\.hudson\jobs\DVR\workspace\build" />
 		<property name="dir_containing_FitNesseRoot_dir" location="C:\fitnesse" />
 		<property name="fitnesse.output.file" value="${fitnesse.output.dir}/fitnesse-test-results" />
+		<property name="Fitnesse.Test.Page.Path" value="FitNesse.SuiteAcceptanceTests.SuiteTestRunnerTests" />
 		<property name="fitnesse.port" value="82" />
 		<path id="fitpath">
 			<fileset dir="${fitnesse_root_dir}" >
@@ -27,11 +28,11 @@
 			<sequential>
 				<echo message="sleeping for 10 seconds to elt FitNesse server start" level="info" />
 				<sleep seconds="10" />
-				<java classpathref="fitpath" classname="fitnesse.runner.TestRunner" fork="true" dir="${fitnesse_root_dir" resultproperty="fit.test.failures" >
+				<java classpathref="fitpath" classname="fitnesse.runner.TestRunner" fork="true" dir="${fitnesse_root_dir}" resultproperty="fit.test.failures" >
 					<arg value="-v" />
 					<arg value="localhost" />
 					<arg value="${fitnesse.port}" />
-					<arg value="${Fitnesse.Test.Page.Path" />
+					<arg value="${Fitnesse.Test.Page.Path"} />
 				</java>
 			</sequential>
 		</parallel>
