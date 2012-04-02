@@ -1,7 +1,8 @@
 <property name ="fitnesseTestResult" default="tests" >
 	<target name="smoke" description="Run fitnesse acceptance tests.">
 		<property name="fitnesse_root_dir" location="C:\fitnesse"/>
-		<property name="fitnesse_log_dir"  location="C:\Users\asif.iqbal\.hudson\jobs\DVR\workspace\testResult" />
+		<property name="fitnesse_log_dir"  location="C:\Users\asif.iqbal\.hudson\jobs\DVR\workspace\build\fitnesseLogs" />
+		<property name="fitnesse_output_dir"  location="C:\Users\asif.iqbal\.hudson\jobs\DVR\workspace\build" />
 		<property name="dir_containing_FitNesseRoot_dir" location="C:\fitnesse" />
 		<property name="fitnesse.output.file" value="${fitnesse.output.dir}/fitnesse-test-results" />
 		<property name="fitnesse.port" value="82" />
