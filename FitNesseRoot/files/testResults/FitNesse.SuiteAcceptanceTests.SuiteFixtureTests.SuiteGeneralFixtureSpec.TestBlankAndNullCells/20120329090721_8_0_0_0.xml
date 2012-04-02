@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20111026</FitNesseVersion>
+  <rootPath>TestBlankAndNullCells</rootPath>
+    <result>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5</runTimeInMillis>
+    <content><![CDATA[<br/><div class="collapse_rim">
+	<div style="float: right;" class="meta">
+		<a href="javascript:expandAll();">Expand All</a>
+ | 
+		<a href="javascript:collapseAll();">Collapse All</a>
+	</div>
+	<a href="javascript:toggleCollapsable('1122');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img1122"/>
+	</a>
+&nbsp;
+	<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="1122"><table border="1" cellspacing="0">
+	<tr>
+		<td>Import</td>
+	</tr>
+	<tr>
+		<td>fitnesse.fixtures</td>
+	</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+	<tr>
+		<td>SetUp</td>
+	</tr>
+</table>
+</div>
+</div>
+<br/><h3>If a cell contains <i>"blank"</i> or <i>"null"</i> then treat it as truly blank or truly null.</h3>
+<br/><br/>Lots of people have had trouble with blank cells.  In Fit, blank cells are automatically filled with the value of the variable or function, and no check is performed.  Unfortunately this means that there was no good test for truly null or truly blank fields.  So these keywords were added to allow users to enter them.<br/><br/><table border="1" cellspacing="0">
+	<tr>
+		<td colspan="6">fitnesse.fixtures.NullAndBlankFixture</td>
+	</tr>
+	<tr>
+		<td>nullString</td>
+		<td>blankString</td>
+		<td>nullString?</td>
+		<td>blankString?</td>
+		<td>isNull?</td>
+		<td>isBlank?</td>
+	</tr>
+	<tr>
+		<td>null</td>
+		<td>blank</td>
+		<td class="pass">null</td>
+		<td class="pass">blank</td>
+		<td class="pass">Y</td>
+		<td class="pass">Y</td>
+	</tr>
+	<tr>
+		<td> <span class="fit_grey">null</span></td>
+		<td> <span class="fit_grey">blank</span></td>
+		<td> <span class="fit_grey">null</span></td>
+		<td> <span class="fit_grey">blank</span></td>
+		<td class="pass">Y</td>
+		<td class="pass">Y</td>
+	</tr>
+	<tr>
+		<td>bob</td>
+		<td>micah</td>
+		<td> <span class="fit_grey">null</span></td>
+		<td> <span class="fit_grey">blank</span></td>
+		<td class="pass">N</td>
+		<td class="pass">N</td>
+	</tr>
+</table>
+<br/><pre>
+public class NullAndBlankFixture extends ColumnFixture
+{
+  public String nullString;
+  public String blankString;
+  public String nullString() {return null;}
+  public String blankString() {return "";}
+  public boolean isNull() {return nullString == null;}
+  public boolean isBlank() {return blankString.length() == 0;}
+}
+</pre>
+<br/><div class="collapse_rim">
+	<div style="float: right;" class="meta">
+		<a href="javascript:expandAll();">Expand All</a>
+ | 
+		<a href="javascript:collapseAll();">Collapse All</a>
+	</div>
+	<a href="javascript:toggleCollapsable('1123');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img1123"/>
+	</a>
+&nbsp;
+	<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="1123"><hr/>
+<br/><table border="1" cellspacing="0">
+	<tr>
+		<td>tear down</td>
+	</tr>
+</table>
+<br/></div>
+</div>
+<br/>]]></content>
+    <relativePageName>TestBlankAndNullCells</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

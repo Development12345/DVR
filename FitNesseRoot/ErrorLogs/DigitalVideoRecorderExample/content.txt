@@ -1,0 +1,6 @@
+!3 !-slim-!
+|'''Date: '''|!-8:47:31 AM (BST) on Monday, April 2, 2012-!|
+|'''Test Page: '''|.DigitalVideoRecorderExample|
+|'''Command: '''|!-java -cp fitnesse.jar;C:\Users\asif.iqbal\DVR\bin fitnesse.slim.SlimService  8089-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-0.695 seconds-!|

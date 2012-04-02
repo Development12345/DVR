@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20111026</FitNesseVersion>
+  <rootPath>TestArraysInColumnFixture</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>78</runTimeInMillis>
+    <content><![CDATA[<br/><div class="collapse_rim">
+	<div style="float: right;" class="meta">
+		<a href="javascript:expandAll();">Expand All</a>
+ | 
+		<a href="javascript:collapseAll();">Collapse All</a>
+	</div>
+	<a href="javascript:toggleCollapsable('1114');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img1114"/>
+	</a>
+&nbsp;
+	<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.SetUp">.FitNesse.SuiteAcceptanceTests.SetUp</a> <a href="FitNesse.SuiteAcceptanceTests.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="1114"><table border="1" cellspacing="0">
+	<tr>
+		<td>Import</td>
+	</tr>
+	<tr>
+		<td>fitnesse.fixtures</td>
+	</tr>
+</table>
+<br/><table border="1" cellspacing="0">
+	<tr>
+		<td>SetUp</td>
+	</tr>
+</table>
+</div>
+</div>
+<br/><h3>You can put arrays of objects into ColumnFixture<a title="create page" href="FitNesse.SuiteAcceptanceTests.SuiteFixtureTests.SuiteColumnFixtureSpec.ColumnFixture?edit&nonExistent=true">[?]</a> fixtures.</h3>
+<br/><br/><table border="1" cellspacing="0">
+	<tr>
+		<td colspan="3">fitnesse.fixtures.ComplexAddFixture</td>
+	</tr>
+	<tr>
+		<td>a</td>
+		<td>b</td>
+		<td>sum?</td>
+	</tr>
+	<tr>
+		<td>1,2</td>
+		<td>3,4</td>
+		<td class="pass">4,6</td>
+	</tr>
+</table>
+<br/><pre>
+public class ComplexAddFixture extends ColumnFixture
+{
+  public int[] a;
+  public int[] b;
+  public int[] sum() {
+    return new int[] {a[0]+b[0], a[1]+b[1]};
+  }
+}
+</pre>
+<br/><br/><div class="collapse_rim">
+	<div style="float: right;" class="meta">
+		<a href="javascript:expandAll();">Expand All</a>
+ | 
+		<a href="javascript:collapseAll();">Collapse All</a>
+	</div>
+	<a href="javascript:toggleCollapsable('1115');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img1115"/>
+	</a>
+&nbsp;
+	<span class="meta">Included page: <a href="FitNesse.SuiteAcceptanceTests.TearDown">.FitNesse.SuiteAcceptanceTests.TearDown</a> <a href="FitNesse.SuiteAcceptanceTests.TearDown?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="1115"><hr/>
+<br/><table border="1" cellspacing="0">
+	<tr>
+		<td>tear down</td>
+	</tr>
+</table>
+<br/></div>
+</div>
+<br/>]]></content>
+    <relativePageName>TestArraysInColumnFixture</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

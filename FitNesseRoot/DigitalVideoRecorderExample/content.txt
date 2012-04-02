@@ -1,0 +1,26 @@
+!define TEST_SYSTEM {slim}
+
+!path C:\Users\asif.iqbal\DVR\bin
+ 
+|import|
+|com.om.example.dvr.fixtures|
+ 
+!define COLLAPSE_SETUP {true}
+!define COLLAPSE_TEARDOWN {true}
+ 
+!|Create Programs                                        |
+|Name |Channel|DayOfWeek|TimeOfDay|DurationInMinutes|id? |
+|House|4      |Monday   |19:00    |60               |[House:4]|
+
+!|Add Programs To Schedule                                                             |
+|name      |episode                      |channel|date     |start time|minutes|created?|lastId?|
+|House M.D.|House Makes Wilson Mad       |7      |5/12/2008|7:00      |60     |true    |$p=    | 
+|Doctor Who|The One where He Saves the UK|12     |5/17/2008|8:00      |60     |true    |       |
+|Conflicts |Should not be added          |7      |5/12/2008|7:00      |30     |false   |       |
+
+
+|Remove Program By Id|$p|
+ 
+|Add Programs To Schedule                                                 |
+|name   |episode            |channel|date     |start time|minutes|created?|
+|Ok now |No longer conflicts|7      |5/12/2008|7:00      |30     |true    |
