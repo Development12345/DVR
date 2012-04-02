@@ -21,7 +21,7 @@
 		<echo message="About to run fitnesse tests on server" level="info" />
 		<parallel>
 			<daemons>
-				<java dir="${fitnesse.root.dir}" classpathref="fitpath" classname="fitnesse.FitNesse" fork="true" dir="${fitnesse_root_dir}" resultproperty="fit.testfailures">
+				<java classpathref="fitpath" classname="fitnesse.FitNesse" fork="true" dir="${fitnesse_root_dir}" resultproperty="fit.testfailures">
 					<arg value="-p" />
 					<arg value="${fitnesse.port}" />
 					<arg value="-e" />
@@ -30,16 +30,7 @@
 					<arg value="${dir_containing_FitNesseRoot_dir}" />
 				</java>
 			</daemons>
-			<sequential>
-				<echo message="sleeping for 10 seconds to elt FitNesse server start" level="info" />
-				<sleep seconds="10" />
-				<java classpathref="fitpath" classname="fitnesse.runner.TestRunner" fork="true" dir="${fitnesse_root_dir}" resultproperty="fit.test.failures" >
-					<arg value="-v" />
-					<arg value="localhost" />
-					<arg value="${fitnesse.port}" />
-					<arg value="${Fitnesse.Test.Page.Path}" />
-				</java>
-			</sequential>
+
 		</parallel>
 	</target>
 	<target name="build.xml" depends="smoke" />
