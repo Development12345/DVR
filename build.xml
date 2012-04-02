@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="DVR" default="tests" >
+<project name="DVR" default="build.xml" >
 	<echo message="About to run fitnesse tests on server  111" level="info" />
 	<target name="smoke" description="Run fitnesse acceptance tests.">
 		<echo message="About to run fitnesse tests on server  111aaa" level="info" />
@@ -41,7 +41,7 @@
 			</sequential>
 		</parallel>
 	</target>
-	<target name="tests" depends="smoke" />
+	<target name="build.xml" depends="smoke" />
 </project>
 					
 				
